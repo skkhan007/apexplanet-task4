@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Product List</h2>
+  <select id="category" onchange="filterAndSort()"> 
+    <option value="">All</option>
+    <option value="electronics">Electronics</option>
+    <option value="clothing">Clothing</option>
+  </select>
+  <select id="sort" onchange="filterAndSort()">
+    <option value="default">Default</option>
+    <option value="price">Price</option>
+    <option value="rating">Rating</option>
+  </select>
+  <div id="products"></div>
+  <script src="script.js"></script>
+</body>
+</html>
